@@ -1459,7 +1459,7 @@
     "setup": false,
     "name": "Político",
     "team": "outsider",
-    "ability": "Se você for o maior respon´savel pela derrota do seu time, o seu alinhamento (bem/mal) muda e você vence, mesmo estando mroto. "
+    "ability": "Se você for o maior responsável pela derrota do seu time, o seu alinhamento (bem/mal) muda e você vence, mesmo estando morto."
   },
   {
     "id": "lilmonsta",
@@ -1490,6 +1490,6 @@
     "setup": false,
     "name": "General",
     "team": "townsfolk",
-    "ability": "Cada noite, você descobre qual tendência o Storyteller acredita que está ganhando: Bem, Mal ou Nenhum." 
+    "ability": "Cada noite, você descobre qual tendência o Storyteller acredita que está ganhando: Bem, Mal ou Nenhum."
   }
 ]
