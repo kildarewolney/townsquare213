@@ -1476,7 +1476,7 @@
     "setup": true,
     "name": "Bebê Monstro",
     "team": "demon",
-    "ability": "A cada noite os Lacaios escolhem quem ficará com o token do Bebê Monstro e "será o Demônio". Um jogador morre a cada noite. [+1 Lacaio]"
+    "ability": "A cada noite os Lacaios escolhem quem ficará com o token do Bebê Monstro e será o Demônio. Um jogador morre a cada noite. [+1 Lacaio]"
   },
   {
     "id": "general",
