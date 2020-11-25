@@ -5,7 +5,7 @@
       <span class="nominator" :style="nominatorStyle"></span>
     </div>
     <div class="overlay">
-      <em class="blue">{{ nominator.name }}</em> nominated
+      <em class="blue">{{ nominator.name }}</em> nomeou
       <em>{{ nominee.name }}</em
       >!
       <br />
@@ -13,23 +13,23 @@
         <em class="blue">
           {{ voters.length }} vote{{ voters.length !== 1 ? "s" : "" }}
         </em>
-        in favor
-        <em>(majority is {{ Math.ceil(alive / 2) }})</em>
+        em favor
+        <em>(maioria é {{ Math.ceil(alive / 2) }})</em>
       </template>
       <template v-else>
-        <em>{{ Math.ceil(players.length / 2) }} votes</em> required for a
-        <em>majority</em>.
+        <em>{{ Math.ceil(players.length / 2) }} votos</em> requeridos para a
+        <em>maioria</em>.
       </template>
 
       <div v-if="session.lockedVote > 1">
         <em class="blue" v-if="voters.length">{{ voters.join(", ") }} </em>
-        <span v-else>nobody</span>
-        voted <em>YES</em>
+        <span v-else>ninguém</span>
+        votou <em>SIM</em>
       </div>
 
       <template v-if="!session.isSpectator">
         <div v-if="!session.lockedVote">
-          Vote time per player:
+          Tempo de voto por jogador:
           <font-awesome-icon
             @mousedown.prevent="setVotingSpeed(-1)"
             icon="minus-circle"
@@ -55,12 +55,12 @@
           {{ session.votingSpeed }} seconds between votes
         </div>
         <div class="button-group">
-          <div class="button vote-no" @click="vote(false)">Vote NO</div>
-          <div class="button vote-yes" @click="vote(true)">Vote YES</div>
+          <div class="button vote-no" @click="vote(false)">Voto NÃO</div>
+          <div class="button vote-yes" @click="vote(true)">Voto SIM</div>
         </div>
       </template>
       <div v-else-if="!player">
-        Please claim a seat to vote.
+        Por favor reinvindique um assento para votar.
       </div>
     </div>
   </div>
