@@ -4,7 +4,7 @@
     @close="toggleModal('role')"
   >
     <h3>
-      Choose a new character for
+      Escolha um novo personagem:
       {{
         playerIndex >= 0 && players.length
           ? players[playerIndex].name
