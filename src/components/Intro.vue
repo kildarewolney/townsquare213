@@ -1,14 +1,14 @@
 <template>
   <div class="intro">
     <img src="static/apple-icon.png" alt="" />
-    Welcome to the (unofficial)
-    <b> Virtual Blood on the Clocktower Town Square</b>!<br />
-    Please add more players through the
+    Bem vindos ao (não-oficial)
+    <b> Blood on the Clocktower Town Square Virtual </b>!<br />
+    Por favor, adicione mais jogadores através do
     <span class="button" @click="toggleMenu">
       <font-awesome-icon icon="cog" /> Menu
     </span>
-    on the top right or by pressing <b>[A]</b>.<br />
-    This project is free and open source and can be found on
+    no canto superior direito ou pressionando <b>[A]</b>.<br />
+    Este projeto foi traduzido de uma versão americana gratuita e de código aberto e pode ser encontrado em
     <a href="https://github.com/bra1n/townsquare" target="_blank">GitHub</a>.
   </div>
 </template>
