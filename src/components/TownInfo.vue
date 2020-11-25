@@ -2,7 +2,7 @@
   <ul class="info">
     <li class="edition" v-bind:class="['edition-' + edition]"></li>
     <li v-if="players.length - teams.traveler < 5">
-      Please add more players!
+      Por favor adicione mais jogadores!
     </li>
     <li>
       {{ players.length }} <font-awesome-icon class="players" icon="users" />
