@@ -140,7 +140,7 @@ h4 {
   }
 }
 
-.Townsfolk {
+.townsfolk {
   .name,
   .player,
   h4 {
@@ -151,7 +151,7 @@ h4 {
     }
   }
 }
-.Ousider {
+.outsider {
   .name,
   .player,
   h4 {
