@@ -12,13 +12,13 @@
       title="Show Character Reference"
     />
     <h3>
-      Night Order
+      Ordem da Noite
       <font-awesome-icon icon="cloud-moon" />
       {{ editionName }}
     </h3>
     <div class="night">
       <ul class="first">
-        <li class="headline">First Night</li>
+        <li class="headline">Primeira Noite</li>
         <li
           v-for="role in rolesFirstNight"
           :key="role.name"
@@ -38,7 +38,7 @@
         </li>
       </ul>
       <ul class="other">
-        <li class="headline">Other Nights</li>
+        <li class="headline">Outras Noites</li>
         <li
           v-for="role in rolesOtherNight"
           :key="role.name"
