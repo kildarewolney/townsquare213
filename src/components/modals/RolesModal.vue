@@ -5,7 +5,7 @@
     @close="toggleModal('roles')"
     v-if="nonTravelers >= 5"
   >
-    <h3>Select the characters for {{ nonTravelers }} players:</h3>
+    <h3>Selecione os Personagens para {{ nonTravelers }} Jogadores:</h3>
     <ul
       class="tokens"
       v-for="(teamRoles, team) in roleSelection"
@@ -25,8 +25,8 @@
       </li>
     </ul>
     <div class="warning" v-if="hasSelectedSetupRoles">
-      Warning: there are characters selected that modify the game setup! The
-      randomizer does not account for these characters.
+      Aviso: existem personagens selecionados que modificam a configuração do jogo! 
+      O randomizador não leva em conta esses personagens.
     </div>
     <div class="button-group">
       <div
@@ -37,11 +37,11 @@
         }"
       >
         <font-awesome-icon icon="people-arrows" />
-        Assign {{ selectedRoles }} characters randomly
+        Atribuir {{ selectedRoles }} personagens aleatoriamente
       </div>
       <div class="button" @click="selectRandomRoles">
         <font-awesome-icon icon="random" />
-        Shuffle characters
+        Aleatorizar Personagens
       </div>
     </div>
   </Modal>
