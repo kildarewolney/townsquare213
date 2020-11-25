@@ -23,22 +23,22 @@
     </div>
     <div class="custom" v-else>
       <h3>Load custom script / characters</h3>
-      To play with a custom script, you need to select the characters you want
-      to play with in the official
+      Para jogar com um custom script, você precisa selecionar os personagens que você quer
+      para jogar com a ferramenta oficial
       <a href="https://bloodontheclocktower.com/script-tool/" target="_blank"
         >Script Tool</a
       >
-      and then upload the generated "custom-list.json" either directly here or
-      provide a URL to such a hosted JSON file.<br />
+      e fazer o upload do "custom-list.json" gerado diretamente aqui ou
+      forneça uma URL para esse arquivo JSON hospedado..<br />
       <br />
-      To play with custom characters, please read
+      Para jogar com personagens personalizados, por favor leia
       <a
         href="https://github.com/bra1n/townsquare#custom-characters"
         target="_blank"
         >the documentation</a
       >
-      on how to write a custom character definition file.
-      <h3>Some popular custom scripts:</h3>
+      sobre como escrever um arquivo de definição de caracteres personalizados.
+      <h3>Alguns Custom Scripts Populares:</h3>
       <ul class="scripts">
         <li
           v-for="(script, index) in scripts"
@@ -62,7 +62,7 @@
           <font-awesome-icon icon="link" /> Enter URL
         </div>
         <div class="button" @click="isCustom = false">
-          <font-awesome-icon icon="undo" /> Back
+          <font-awesome-icon icon="undo" /> Voltar
         </div>
       </div>
     </div>
