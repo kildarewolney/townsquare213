@@ -22,7 +22,7 @@
         <span class="icon">Icone</span>
         <span class="ability">Habilidade</span>
         <span class="player" v-if="Object.keys(playersByRole).length">
-          Player
+          Jogador
         </span>
       </li>
     </ul>
