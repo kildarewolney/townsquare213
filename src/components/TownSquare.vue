@@ -54,7 +54,7 @@
       v-if="grimoire.fabled.length"
     >
       <h3>
-        <span>Fábula</span>
+        <span>Lendários</span>
         <font-awesome-icon icon="times-circle" @click.stop="toggleFabled" />
         <font-awesome-icon icon="plus-circle" @click.stop="toggleFabled" />
       </h3>
