@@ -45,12 +45,12 @@
           <!-- Grimoire -->
           <li class="headline">Grimoire</li>
           <li @click="toggleGrimoire" v-if="players.length">
-            <template v-if="!grimoire.isPublic">Hide</template>
-            <template v-if="grimoire.isPublic">Show</template>
+            <template v-if="!grimoire.isPublic">Esconder</template>
+            <template v-if="grimoire.isPublic">Mostrar</template>
             <em>[G]</em>
           </li>
           <li @click="toggleNightOrder" v-if="players.length">
-            Night order
+            Ordem da Noite
             <em
               ><font-awesome-icon
                 :icon="[
@@ -60,7 +60,7 @@
             /></em>
           </li>
           <li v-if="!session.isSpectator" @click="toggleModal('fabled')">
-            Add Fabled
+            Adicionar Fábula
             <em><font-awesome-icon icon="dragon"/></em>
           </li>
           <li v-if="players.length">
@@ -78,7 +78,7 @@
             </em>
           </li>
           <li @click="setBackground">
-            Background image
+            Imagem de Fundo
             <em><font-awesome-icon icon="image"/></em>
           </li>
         </template>
@@ -91,10 +91,10 @@
             Live Session
           </li>
           <li @click="hostSession" v-if="!session.sessionId">
-            Host (Storyteller)<em>[H]</em>
+            Anfitrião (Storyteller)<em>[H]</em>
           </li>
           <li @click="joinSession" v-if="!session.sessionId">
-            Join (Player)<em>[J]</em>
+            Entrar (Jogador)<em>[J]</em>
           </li>
           <li v-if="session.sessionId && session.ping">
             Delay to {{ session.isSpectator ? "host" : "players" }}
@@ -113,13 +113,13 @@
         <template v-if="tab === 'players' && !session.isSpectator">
           <!-- Users -->
           <li class="headline">Players</li>
-          <li @click="addPlayer" v-if="players.length < 20">Add<em>[A]</em></li>
+          <li @click="addPlayer" v-if="players.length < 20">Adicionar Jogador<em>[A]</em></li>
           <li @click="randomizeSeatings" v-if="players.length > 2">
-            Randomize
+            Randomizar Cadeiras
             <em><font-awesome-icon icon="dice"/></em>
           </li>
           <li @click="clearPlayers" v-if="players.length">
-            Remove all
+            Remover Tudo
             <em><font-awesome-icon icon="trash-alt"/></em>
           </li>
         </template>
@@ -128,18 +128,18 @@
           <!-- Characters -->
           <li class="headline">Characters</li>
           <li v-if="!session.isSpectator" @click="toggleModal('edition')">
-            Select Edition
+            Selecionar Edição
             <em>[E]</em>
           </li>
           <li
             @click="toggleModal('roles')"
             v-if="!session.isSpectator && players.length > 4"
           >
-            Choose & Assign
+            Escolher e Atribuir
             <em>[C]</em>
           </li>
           <li @click="clearRoles" v-if="players.length">
-            Remove all
+            Remover Tudo
             <em><font-awesome-icon icon="trash-alt"/></em>
           </li>
         </template>
@@ -148,16 +148,16 @@
           <!-- Help -->
           <li class="headline">Help</li>
           <li @click="toggleModal('reference')">
-            Reference Sheet
+            Folha de Referência
             <em>[R]</em>
           </li>
           <li @click="toggleModal('nightOrder')">
-            Night Order Sheet
+            Folha de Refenência da Noite
             <em>[N]</em>
           </li>
           <li>
-            <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">
-              Join Discord
+            <a href="https://discord.gg/pywK3x5N" target="_blank">
+              Entrar no Discord
             </a>
             <em>
               <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">
