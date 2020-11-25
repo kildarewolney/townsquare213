@@ -109,19 +109,19 @@
         <ul class="menu" v-if="isMenuOpen">
           <template v-if="!session.isSpectator">
             <li @click="changeName">
-              <font-awesome-icon icon="user-edit" />Rename
+              <font-awesome-icon icon="user-edit" />Renomear
             </li>
             <li v-if="!session.nomination" @click="nominatePlayer()">
               <font-awesome-icon icon="hand-point-right" />
-              Nomination
+              Nomeador
             </li>
             <li @click="movePlayer()">
               <font-awesome-icon icon="redo-alt" />
-              Move player
+              Mover Jogador
             </li>
             <li @click="swapPlayer()">
               <font-awesome-icon icon="exchange-alt" />
-              Swap seats
+              Trocar Habilidades
             </li>
             <li class="screenshot" @click="takeScreenshot">
               <font-awesome-icon icon="camera" />
@@ -129,13 +129,13 @@
             </li>
             <li @click="removePlayer">
               <font-awesome-icon icon="times-circle" />
-              Remove
+              Remover
             </li>
           </template>
           <li @click="claimSeat" v-if="session.isSpectator">
             <font-awesome-icon icon="chair" />
             <template v-if="player.id !== session.playerId">
-              Claim seat
+              Reivindicar Assento
             </template>
             <template v-else> Vacate seat </template>
           </li>
