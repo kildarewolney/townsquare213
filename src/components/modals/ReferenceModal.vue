@@ -12,15 +12,15 @@
       title="Show Night Order"
     />
     <h3>
-      Character Reference
+      Referência dos Personagens
       <font-awesome-icon icon="address-card" />
       {{ editionName }}
     </h3>
     <ul class="legend">
       <li>
-        <span class="name">Name</span>
-        <span class="icon">Icon</span>
-        <span class="ability">Ability</span>
+        <span class="name">Nome</span>
+        <span class="icon">Icone</span>
+        <span class="ability">Habilidade</span>
         <span class="player" v-if="Object.keys(playersByRole).length">
           Player
         </span>
@@ -140,7 +140,7 @@ h4 {
   }
 }
 
-.townsfolk {
+.Townsfolk {
   .name,
   .player,
   h4 {
@@ -151,7 +151,7 @@ h4 {
     }
   }
 }
-.outsider {
+.Ousider {
   .name,
   .player,
   h4 {
