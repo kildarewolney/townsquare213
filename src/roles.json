@@ -632,7 +632,7 @@
     "setup": false,
     "name": "Mentor",
     "team": "minion",
-    "ability": "Se o Demônio morrer por execução, o jogo continua. No dia seguinte, se um jogador for executado o time dele perde."
+    "ability": "Se o Demônio morrer por execução, o jogo continua por mais 1 dia. No dia seguinte, se um jogador for executado o time dele perde."
   },
   {
     "id": "po",
@@ -900,7 +900,7 @@
     "setup": false,
     "name": "Mutante",
     "team": "outsider",
-    "ability": "Se você insinuar que é um Forasteiro, você pode ser executado imediatamente."
+    "ability": "Se você insinuar que é um Forasteiro, você pode ser executado imediatamente. Se você estiver alucinado que é um Forasteiro, você pode ser executado."
   },
   {
     "id": "sweetheart",
@@ -988,7 +988,7 @@
     "setup": false,
     "name": "Cerenovus",
     "team": "minion",
-    "ability": "Toda Noite, escolha um personagem do Bem e um Jogador: o jogador DEVE fingir que sempre foi este personagem durante o próximo Dia. Do contrário, pode ser executado imediatamente."
+    "ability": "Toda Noite, escolha um personagem do Bem e um Jogador: o jogador deve ficar alucinado que é esse personagem durante o próximo Dia; do contrário, pode ser executado imediatamente."
   },
   {
     "id": "pithag",
