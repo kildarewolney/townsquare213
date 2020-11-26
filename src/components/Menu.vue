@@ -60,7 +60,7 @@
             /></em>
           </li>
           <li v-if="!session.isSpectator" @click="toggleModal('fabled')">
-            Adicionar Lendário
+            Adicionar Lenda
             <em><font-awesome-icon icon="dragon"/></em>
           </li>
           <li v-if="players.length">
