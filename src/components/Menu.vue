@@ -97,15 +97,15 @@
             Entrar (Jogador)<em>[J]</em>
           </li>
           <li v-if="session.sessionId && session.ping">
-            Delay to {{ session.isSpectator ? "host" : "players" }}
+            Atraso com {{ session.isSpectator ? "host" : "players" }}
             <em>{{ session.ping }}ms</em>
           </li>
           <li v-if="session.sessionId" @click="copySessionUrl">
-            Copy player link
+            Copie o link de convite
             <em><font-awesome-icon icon="copy"/></em>
           </li>
           <li @click="leaveSession" v-if="session.sessionId">
-            Leave Session
+            Sair da sessão
             <em>{{ session.sessionId }}</em>
           </li>
         </template>
