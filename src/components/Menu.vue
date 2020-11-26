@@ -88,7 +88,7 @@
             {{ session.isSpectator ? "Servidor" : "Hosting" }}
           </li>
           <li class="headline" v-else>
-            Live Session
+            Sessão
           </li>
           <li @click="hostSession" v-if="!session.sessionId">
             Anfitrião (Storyteller)<em>[H]</em>
@@ -112,7 +112,7 @@
 
         <template v-if="tab === 'players' && !session.isSpectator">
           <!-- Users -->
-          <li class="headline">Players</li>
+          <li class="headline">Jogadores</li>
           <li @click="addPlayer" v-if="players.length < 20">Adicionar Jogador<em>[A]</em></li>
           <li @click="randomizeSeatings" v-if="players.length > 2">
             Randomizar Cadeiras
