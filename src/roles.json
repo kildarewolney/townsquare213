@@ -1075,9 +1075,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Scapegoat",
+    "name": "Bode expiatório",
     "team": "traveler",
-    "ability": "If a player of your alignment is executed, you might be executed instead."
+    "ability": "Se um jogador do seu alinhamento for executado, você pode ser executado em seu lugar."
   },
   {
     "id": "gunslinger",
@@ -1088,9 +1088,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Gunslinger",
+    "name": "Pistoleiro",
     "team": "traveler",
-    "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die."
+    "ability": "A cada dia, após a contagem da primeira votação, você pode escolher um jogador que votou: ele morre."
   },
   {
     "id": "beggar",
@@ -1101,9 +1101,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Beggar",
+    "name": "Mendigo",
     "team": "traveler",
-    "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment."
+    "ability": "Você deve usar um token de voto para votar. Jogadores mortos podem escolher dar a você os seus. Nesse caso, você aprende o alinhamento deles."
   },
   {
     "id": "bureaucrat",
@@ -1116,9 +1116,9 @@
       "Voto x3"
     ],
     "setup": false,
-    "name": "Bureaucrat",
+    "name": "Burocrata",
     "team": "traveler",
-    "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow."
+    "ability": "Cada noite, escolha um jogador (você não pode escolher): O voto do escolhido conta como 3 votos amanhã."
   },
   {
     "id": "thief",
@@ -1131,9 +1131,9 @@
       "Voto Negativo"
     ],
     "setup": false,
-    "name": "Thief",
+    "name": "Ladão",
     "team": "traveler",
-    "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow."
+    "ability": "Cada noite, escolha um jogador (você não pode escolher): O voto do escolhido conta negativamente amanhã."
   },
   {
     "id": "apprentice",
@@ -1146,9 +1146,9 @@
       "Habilidade de aprendiz"
     ],
     "setup": false,
-    "name": "Apprentice",
+    "name": "Aprendiz",
     "team": "traveler",
-    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil)."
+    "ability": "Em sua 1ª noite, você ganha uma habilidade de Cidadão (se for bom), ou uma habilidade de Lacaio (se for mau)."
   },
   {
     "id": "matron",
@@ -1159,9 +1159,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Matron",
+    "name": "Matrona",
     "team": "traveler",
-    "ability": "Each day, you may choose up to 3 pairs of players to swap seats. Players may not leave their seats to talk in private."
+    "ability": "A cada dia, você pode escolher até 3 pares de jogadores para trocar de lugar. Os jogadores não podem deixar seus lugares para conversar em particular."
   },
   {
     "id": "voudon",
@@ -1174,7 +1174,7 @@
     "setup": false,
     "name": "Voudon",
     "team": "traveler",
-    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required."
+    "ability": "Só você e os mortos podem votar. Eles não precisam de um token de voto para fazer isso. Regra da maioria (mais de 50% dos votos a favor) não é necessária."
   },
   {
     "id": "judge",
@@ -1187,9 +1187,9 @@
       "Usado"
     ],
     "setup": false,
-    "name": "Judge",
+    "name": "Juiz",
     "team": "traveler",
-    "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail."
+    "ability": "Uma vez por jogo, se outro jogador for nomeado, você pode escolher forçar a execução atual para passar ou falhar."
   },
   {
     "id": "bishop",
@@ -1203,9 +1203,9 @@
       "Nomeado Mal"
     ],
     "setup": false,
-    "name": "Bishop",
+    "name": "Bispo",
     "team": "traveler",
-    "ability": "Only the Storyteller can nominate. At least 1 opposite player must be nominated each day."
+    "ability": "Apenas o Narrador pode indicar. Pelo menos 1 jogador de cada alinhamento deve ser nomeado a cada dia."
   },
   {
     "id": "butcher",
@@ -1216,9 +1216,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Butcher",
+    "name": "Açougueiro",
     "team": "traveler",
-    "ability": "Each day, after the 1st execution, you nominate again."
+    "ability": "A cada dia, após a 1ª execução, você nomeia novamente."
   },
   {
     "id": "bonecollector",
@@ -1232,9 +1232,9 @@
       "Habilidade Ativa"
     ],
     "setup": false,
-    "name": "Bone Collector",
+    "name": "Coletor de Osso",
     "team": "traveler",
-    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk."
+    "ability": "Uma vez por jogo, à noite, escolha um jogador morto: ele recupera suas habilidades até o anoitecer."
   },
   {
     "id": "harlot",
@@ -1247,9 +1247,9 @@
       "Morto"
     ],
     "setup": false,
-    "name": "Harlot",
+    "name": "Meretriz",
     "team": "traveler",
-    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die."
+    "ability": "Cada noite *, escolha um jogador vivo: se eles concordarem, você aprende o personagem deles, mas os dois podem morrer."
   },
   {
     "id": "barista",
@@ -1265,7 +1265,7 @@
     "setup": false,
     "name": "Barista",
     "team": "traveler",
-    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which."
+    "ability": "Cada noite, até o anoitecer, 1) um jogador fica sóbrio, saudável e obtém informações verdadeiras, ou 2) sua habilidade funciona duas vezes. Eles aprendem qual."
   },
   {
     "id": "deviant",
@@ -1276,9 +1276,9 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "name": "Deviant",
+    "name": "Divergente",
     "team": "traveler",
-    "ability": "If you were funny today, you can not be exiled."
+    "ability": "Se você foi engraçado hoje, você não pode ser exilado."
   },
   {
     "id": "balloonist",
