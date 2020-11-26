@@ -43,7 +43,7 @@
 
         <template v-if="tab === 'grimoire'">
           <!-- Grimoire -->
-          <li class="headline">Grimoire</li>
+          <li class="headline">Grimório</li>
           <li @click="toggleGrimoire" v-if="players.length">
             <template v-if="!grimoire.isPublic">Esconder</template>
             <template v-if="grimoire.isPublic">Mostrar</template>
@@ -85,7 +85,7 @@
 
         <template v-if="tab === 'session'">
           <li class="headline" v-if="session.sessionId">
-            {{ session.isSpectator ? "Playing" : "Hosting" }}
+            {{ session.isSpectator ? "Servidor" : "Hosting" }}
           </li>
           <li class="headline" v-else>
             Live Session
@@ -126,7 +126,7 @@
 
         <template v-if="tab === 'characters'">
           <!-- Characters -->
-          <li class="headline">Characters</li>
+          <li class="headline">Personagens</li>
           <li v-if="!session.isSpectator" @click="toggleModal('edition')">
             Selecionar Edição
             <em>[E]</em>
@@ -146,7 +146,7 @@
 
         <template v-if="tab === 'help'">
           <!-- Help -->
-          <li class="headline">Help</li>
+          <li class="headline">Ajuda</li>
           <li @click="toggleModal('reference')">
             Folha de Referência
             <em>[R]</em>
@@ -156,11 +156,11 @@
             <em>[N]</em>
           </li>
           <li>
-            <a href="https://discord.gg/pywK3x5N" target="_blank">
+            <a href="https://discord.gg/3FGe8M44tW" target="_blank">
               Entrar no Discord
             </a>
             <em>
-              <a href="https://discord.gg/Gd7ybwWbFk" target="_blank">
+              <a href="https://discord.gg/3FGe8M44tW" target="_blank">
                 <font-awesome-icon :icon="['fab', 'discord']" />
               </a>
             </em>
