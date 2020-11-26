@@ -588,7 +588,7 @@
     "setup": true,
     "name": "Chefe da Máfia",
     "team": "minion",
-    "ability": "Você sabe quais Forasteiros estão em jogo. Se um deles morrer durante o Dia, você escolhe um jogador para matar esta Noite. [-1 or +1 Forasteiro]"
+    "ability": "Você sabe quais Forasteiros estão em jogo. Se um deles morrer durante o Dia, você escolhe um jogador para matar esta Noite. [-1 ou +1 Forasteiro]"
   },
   {
     "id": "devilsadvocate",
