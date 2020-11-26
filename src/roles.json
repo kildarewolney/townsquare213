@@ -1265,7 +1265,7 @@
     "setup": false,
     "name": "Barista",
     "team": "traveler",
-    "ability": "Cada noite, até o anoitecer, 1) um jogador fica sóbrio, saudável e obtém informações verdadeiras, ou 2) sua habilidade funciona duas vezes. Eles aprendem qual."
+    "ability": "Cada noite, até o anoitecer, 1- um jogador fica sóbrio, saudável e obtém informações verdadeiras, ou 2- sua habilidade funciona duas vezes. Eles aprendem qual."
   },
   {
     "id": "deviant",
