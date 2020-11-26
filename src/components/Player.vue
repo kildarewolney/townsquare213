@@ -1,3 +1,45 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kildarewolney 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+kildarewolney
+/
+townsquare
+Template
+1
+00
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+2
+Insights
+Settings
+townsquare/src/components/Player.vue
+@kildarewolney
+kildarewolney Update Player.vue
+Latest commit 29e6356 yesterday
+ History
+ 2 contributors
+@bra1n@kildarewolney
+We found a potential security vulnerability in one of your dependencies.
+Only the owner of this repository can see this message.
+
+904 lines (828 sloc)  19.7 KB
+  
 <template>
   <li :style="zoom">
     <div
@@ -137,7 +179,7 @@
             <template v-if="player.id !== session.playerId">
               Reivindicar Assento
             </template>
-            <template v-else> Vacate seat </template>
+            <template v-else> Liberar Assento </template>
           </li>
         </ul>
       </transition>
@@ -170,7 +212,6 @@
 <script>
 import Token from "./Token";
 import { mapGetters, mapState } from "vuex";
-
 export default {
   components: {
     Token
@@ -301,7 +342,6 @@ export default {
 
 <style lang="scss">
 @import "../vars.scss";
-
 .fold-enter-active,
 .fold-leave-active {
   transition: transform 250ms ease-in-out;
@@ -312,17 +352,14 @@ export default {
 .fold-leave-to {
   transform: perspective(200px) rotateY(90deg);
 }
-
 /***** Player token *****/
 .circle .player {
   margin-bottom: 10px;
-
   &:before {
     content: " ";
     display: block;
     padding-top: 100%;
   }
-
   .shroud {
     top: 0;
     left: 0;
@@ -335,7 +372,6 @@ export default {
     transition: transform 200ms ease-in-out;
     z-index: 2;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
-
     &:before {
       content: " ";
       background: url("../assets/shroud.png") center -10px no-repeat;
@@ -352,29 +388,24 @@ export default {
       transition: all 200ms;
       pointer-events: none;
     }
-
     #townsquare.spectator & {
       pointer-events: none;
     }
-
     #townsquare:not(.spectator) &:hover:before {
       opacity: 0.5;
       top: -10px;
       transform: scale(1);
     }
   }
-
   &.dead .shroud:before {
     opacity: 1;
     top: 0;
     transform: perspective(400px) scale(1);
   }
-
   #townsquare:not(.spectator) &.dead .shroud:hover:before {
     opacity: 1;
   }
 }
-
 /****** Life token *******/
 .player {
   z-index: 2;
@@ -392,22 +423,18 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-
     &:before {
       content: " ";
       display: block;
       padding-top: 100%;
     }
   }
-
   &.dead {
     &.no-vote .life:after {
       display: none;
     }
-
     .life {
       background-image: url("../assets/death.png");
-
       &:after {
         content: " ";
         position: absolute;
@@ -421,33 +448,27 @@ export default {
       }
     }
   }
-
   &.traveler .life {
     filter: grayscale(100%);
   }
 }
-
 #townsquare.public .player {
   .shroud {
     transform: perspective(400px) rotateX(90deg);
     pointer-events: none;
   }
-
   .life {
     transform: perspective(400px) rotateY(0deg);
   }
-
   &.traveler:not(.dead) .token {
     transform: perspective(400px) scale(0.8);
     pointer-events: none;
     transition-delay: 0s;
   }
-
   &.traveler.dead .token {
     transition-delay: 0s;
   }
 }
-
 /***** Role token ******/
 .player .token {
   position: absolute;
@@ -458,11 +479,9 @@ export default {
   transform: perspective(400px) rotateY(0deg);
   backface-visibility: hidden;
 }
-
 #townsquare.public .circle .token {
   transform: perspective(400px) rotateY(-180deg);
 }
-
 /****** Player choice icons *******/
 .player .overlay {
   width: 100%;
@@ -508,13 +527,11 @@ export default {
     }
   }
 }
-
 // other player voted yes, but is not locked yet
 #townsquare.vote .player.vote-yes .overlay svg.vote.fa-skull {
   opacity: 0.5;
   transform: scale(1);
 }
-
 // you voted yes | a locked vote yes | a locked vote no
 #townsquare.vote .player.you.vote-yes .overlay svg.vote.fa-skull,
 #townsquare.vote .player.vote-lock.vote-yes .overlay svg.vote.fa-skull,
@@ -522,18 +539,15 @@ export default {
   opacity: 1;
   transform: scale(1);
 }
-
 // a locked vote can be clicked on by the ST
 #townsquare.vote:not(.spectator) .player.vote-lock .overlay svg.vote {
   pointer-events: all;
 }
-
 li.from:not(.nominate) .player .overlay svg.cancel {
   opacity: 1;
   transform: scale(1);
   pointer-events: all;
 }
-
 li.swap:not(.from) .player .overlay svg.swap,
 li.nominate .player .overlay svg.nominate,
 li.move:not(.from) .player .overlay svg.move {
@@ -541,7 +555,6 @@ li.move:not(.from) .player .overlay svg.move {
   transform: scale(1);
   pointer-events: all;
 }
-
 /****** Vote icon ********/
 .player .has-vote {
   position: absolute;
@@ -551,13 +564,11 @@ li.move:not(.from) .player .overlay svg.move {
   filter: drop-shadow(0 0 3px black);
   transition: opacity 250ms;
   z-index: 2;
-
   #townsquare.public & {
     opacity: 0;
     pointer-events: none;
   }
 }
-
 /****** Session seat glow *****/
 @mixin glow($name, $color) {
   @keyframes #{$name}-glow {
@@ -573,22 +584,18 @@ li.move:not(.from) .player .overlay svg.move {
       border-color: $color;
     }
   }
-
   .player.you.#{$name} .token {
     animation: #{$name}-glow 5s ease-in-out infinite;
   }
 }
-
 @include glow("townsfolk", $townsfolk);
 @include glow("outsider", $outsider);
 @include glow("demon", $demon);
 @include glow("minion", $minion);
 @include glow("traveler", $traveler);
-
 .player.you .token {
   animation: townsfolk-glow 5s ease-in-out infinite;
 }
-
 /****** Seat icon ********/
 .player .seat {
   position: absolute;
@@ -599,11 +606,9 @@ li.move:not(.from) .player .overlay svg.move {
   cursor: default;
   z-index: 2;
 }
-
 .player.you .seat {
   color: $townsfolk;
 }
-
 /***** Player name *****/
 .player > .name {
   text-align: center;
@@ -620,17 +625,14 @@ li.move:not(.from) .player .overlay svg.move {
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 0 4px;
-
   #townsquare:not(.spectator) &:hover,
   &.active {
     color: red;
   }
 }
-
 .player.dead > .name {
   opacity: 0.5;
 }
-
 /***** Player menu *****/
 .player > .menu {
   position: absolute;
@@ -645,7 +647,6 @@ li.move:not(.from) .player .overlay svg.move {
   margin-left: 15px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
   &:before {
     content: " ";
     width: 0;
@@ -657,7 +658,6 @@ li.move:not(.from) .player .overlay svg.move {
     bottom: 7px;
     margin-right: 2px;
   }
-
   li:hover {
     color: red;
   }
@@ -665,7 +665,6 @@ li.move:not(.from) .player .overlay svg.move {
     margin-right: 2px;
   }
 }
-
 /***** Ability text *****/
 #townsquare.public .circle .ability {
   display: none;
@@ -674,7 +673,6 @@ li.move:not(.from) .player .overlay svg.move {
 .circle .player .token:hover .ability {
   opacity: 1;
 }
-
 /**** Night reminders ****/
 .player .night {
   position: absolute;
@@ -687,22 +685,18 @@ li.move:not(.from) .player .overlay svg.move {
   top: 0;
   align-items: center;
   pointer-events: none;
-
   &:after {
     content: " ";
     display: block;
     padding-top: 100%;
   }
-
   #townsquare.public & {
     opacity: 0;
     pointer-events: none;
   }
-
   &:hover ~ .token .ability {
     opacity: 0;
   }
-
   span {
     display: flex;
     position: absolute;
@@ -718,7 +712,6 @@ li.move:not(.from) .player .overlay svg.move {
     align-items: center;
     opacity: 0;
     transition: opacity 200ms ease-in-out;
-
     &:before {
       transform: rotate(-90deg);
       transform-origin: center top;
@@ -730,7 +723,6 @@ li.move:not(.from) .player .overlay svg.move {
       text-align: center;
       width: 200px;
     }
-
     &:after {
       content: " ";
       border: 10px solid transparent;
@@ -739,7 +731,6 @@ li.move:not(.from) .player .overlay svg.move {
       position: absolute;
     }
   }
-
   &.first span {
     right: 120%;
     background: linear-gradient(
@@ -756,7 +747,6 @@ li.move:not(.from) .player .overlay svg.move {
       left: 100%;
     }
   }
-
   &.other span {
     left: 120%;
     background: linear-gradient(to right, $demon 0%, rgba(0, 0, 0, 0.5) 20%);
@@ -769,7 +759,6 @@ li.move:not(.from) .player .overlay svg.move {
       border-right-color: $demon;
     }
   }
-
   em {
     font-style: normal;
     position: absolute;
@@ -786,31 +775,25 @@ li.move:not(.from) .player .overlay svg.move {
     justify-content: center;
     align-items: center;
   }
-
   &.first em {
     left: -10%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, $townsfolk 100%);
   }
-
   &.other em {
     right: -10%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, $demon 100%);
   }
-
   em:hover + span {
     opacity: 1;
   }
-
   #app.screenshot & {
     display: none;
   }
 }
-
 .player.dead .night em {
   color: #ddd;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, gray 100%);
 }
-
 /***** Reminder token *****/
 .circle .reminder {
   background: url("../assets/reminder.png") center center;
@@ -830,7 +813,6 @@ li.move:not(.from) .player .overlay svg.move {
     display: block;
     padding-top: 100%;
   }
-
   .text {
     line-height: 90%;
     color: black;
@@ -840,7 +822,6 @@ li.move:not(.from) .player .overlay svg.move {
     text-align: center;
     margin-top: 50%;
   }
-
   .icon,
   &:after {
     content: " ";
@@ -854,12 +835,10 @@ li.move:not(.from) .player .overlay svg.move {
     background-image: url("../assets/icons/plus.png");
     transition: opacity 200ms;
   }
-
   &:after {
     background-image: url("../assets/icons/x.png");
     opacity: 0;
   }
-
   &.add {
     opacity: 0;
     top: 30px;
@@ -870,7 +849,6 @@ li.move:not(.from) .player .overlay svg.move {
       top: auto;
     }
   }
-
   &.custom {
     .icon {
       display: none;
@@ -881,7 +859,6 @@ li.move:not(.from) .player .overlay svg.move {
       margin-top: 0;
     }
   }
-
   &:hover:before {
     opacity: 0;
   }
@@ -896,9 +873,20 @@ li.move:not(.from) .player .overlay svg.move {
 .circle li:hover .reminder.add:before {
   opacity: 1;
 }
-
 #townsquare.public .reminder {
   opacity: 0;
   pointer-events: none;
 }
 </style>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
