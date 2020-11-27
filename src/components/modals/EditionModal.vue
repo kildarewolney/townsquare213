@@ -109,7 +109,7 @@ export default {
         ],
         [
           "teste",
-          "https://gist.githubusercontent.com/bra1n/8a5ec41a7bbf945f6b7dfc1cef72b569/raw/998767f82badc48cbb9c284765ad36330f7e28f6/catfishing.json"
+          "https://gist.github.com/kildarewolney/fe936fbbdba1152db7293314ac4aecb2.js"
         ]
       ]
     };
