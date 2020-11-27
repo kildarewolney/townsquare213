@@ -7,7 +7,7 @@
     "setup": false,
     "name": "Doomsayer",
     "team": "fabled",
-    "ability": "Se 4 ou mais jogadores estiverem vivos, cada jogador vivo pode, uma vez por jogo, publicamente escolher que alguém do seu alinhamento morra."
+    "ability": "Se 4 ou mais jogadores estiverem vivos, cada jogador vivo pode, uma vez por jogo, publicamente escolher que alguém do seu alinhamento morre."
   },
   {
     "id": "angel",
