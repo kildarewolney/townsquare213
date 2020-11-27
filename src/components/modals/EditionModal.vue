@@ -106,6 +106,10 @@ export default {
         [
           "Vigormortis High School (Teensyville)",
           "https://gist.githubusercontent.com/bra1n/1f65bd4a999524719d5dabe98c3c2d27/raw/22bbec6bf56a51a7459e5ae41ed47e41971c5445/VigormortisHighSchool.json"
+        ],
+        [
+          "teste",
+          "https://gist.githubusercontent.com/bra1n/8a5ec41a7bbf945f6b7dfc1cef72b569/raw/998767f82badc48cbb9c284765ad36330f7e28f6/catfishing.json"
         ]
       ]
     };
