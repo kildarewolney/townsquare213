@@ -101,7 +101,7 @@
       "Executado"
     ],
     "setup": false,
-    "ability": "Toda Noite*, você descobre qual personagem foi executado durante o Dia."
+    "ability": "Toda Noite*, você descobre qual personagem foi morto por execução durante o Dia."
   },
   {
     "id": "monk",
@@ -494,7 +494,7 @@
     "setup": false,
     "name": "Pacifista",
     "team": "townsfolk",
-    "ability": "Jogadores do bem podem não morrer quando executados."
+    "ability": "Jogadores do Bem podem não morrer quando executados."
   },
   {
     "id": "fool",
@@ -650,7 +650,7 @@
     "setup": false,
     "name": "Po",
     "team": "demon",
-    "ability": "Toda Noite*, se quiser, escolha um jogador: ele morre. Se, por qualquer motivo, vocênão escolheu na Noite passada, escolha 3 jogadores: eles morrem na ordem que você escolheu."
+    "ability": "Toda Noite*, se quiser, escolha um jogador: ele morre. Se, por qualquer motivo, você não escolheu na Noite passada, escolha 3 jogadores: eles morrem na ordem que você escolheu."
   },
   {
     "id": "zombuul",
