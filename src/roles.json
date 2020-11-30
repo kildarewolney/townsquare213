@@ -5,7 +5,7 @@
     "edition": "tb",
     "team": “cidadão”,
     "firstNight": 19,
-    "firstNightReminder": ":eye: Show the character token of a Townsfolk in play. Point to two players, one of which is that character. :eye-slash:",
+    "firstNightReminder": ":eye: Show the character token of a Townsfolk in play. Point to two players, one of which is that character :eye-slash:",
     "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [
