@@ -11,7 +11,7 @@
       <br />
       <template v-if="nominee.role.team !== 'traveler'">
         <em class="blue">
-          {{ voters.length }} vote{{ voters.length !== 1 ? "s" : "" }}
+          {{ voters.length }} voto{{ voters.length !== 1 ? "s" : "" }}
         </em>
         em favor
         <em>(maioria é {{ Math.ceil(alive / 2) }})</em>
@@ -42,12 +42,12 @@
         </div>
         <div class="button-group">
           <div class="button" v-if="!session.lockedVote" @click="start">
-            Start Vote
+            Iniciar Votação
           </div>
           <div class="button" v-else @click="stop">
-            Reset Vote
+            Reiniciar Votação
           </div>
-          <div class="button" @click="finish">Finish</div>
+          <div class="button" @click="finish">Finalizar</div>
         </div>
       </template>
       <template v-else-if="canVote">
