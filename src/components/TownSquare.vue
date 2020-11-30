@@ -32,7 +32,7 @@
     >
       <h3>
         <font-awesome-icon icon="camera" @click.stop="takeScreenshot" />
-        <span v-if="session.isSpectator">Other characters</span>
+        <span v-if="session.isSpectator">Outros Personagens</span>
         <span v-else>Blefes do Demônio</span>
         <font-awesome-icon icon="times-circle" @click.stop="toggleBluffs" />
         <font-awesome-icon icon="plus-circle" @click.stop="toggleBluffs" />
