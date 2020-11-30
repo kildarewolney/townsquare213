@@ -8,7 +8,7 @@
       {{
         playerIndex >= 0 && players.length
           ? players[playerIndex].name
-          : "bluffing"
+          : "blefe do demônio"
       }}
     </h3>
     <ul class="tokens">
