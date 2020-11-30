@@ -29,7 +29,7 @@
       "Falso"
     ],
     "setup": false,
-    "ability": "Você começa sabendo que 1 dentre 2 jogadores é um Forasteiro específico. (ou que não há forasteriros em jogo)"
+    "ability": "Você começa sabendo que 1 dentre 2 jogadores é um Forasteiro específico. (ou que não há forasteiros em jogo)"
   },
   {
     "id": "investigator",
@@ -86,7 +86,7 @@
       "Falso"
     ],
     "setup": false,
-    "ability": "Toda Noite, escolha 2 jogadares: Você descobre se o Demônio é um deles. No entanto, existe um jogador do bem que é sempre detectado incorretamente."
+    "ability": "Toda Noite, escolha 2 jogadores: Você descobre se o Demônio é um deles. No entanto, existe um jogador do bem que é sempre detectado incorretamente."
   },
   {
     "id": "undertaker",
@@ -116,7 +116,7 @@
       "Protegido"
     ],
     "setup": false,
-    "ability": "Toda Noite*, escolha um jogador(exceto você): ele estará imune ao Demônio esta Noite."
+    "ability": "Toda Noite*, escolha um jogador (exceto você): ele estará imune ao Demônio esta Noite."
   },
   {
     "id": "ravenkeeper",
@@ -216,7 +216,7 @@
       "Bêbado"
     ],
     "setup": true,
-    "ability": "Você não sabe que é o Bêbado. Em vez disso, você acredita ser um Cidadão mas sua habilidade é apenas uma ilusão."
+    "ability": "Você não sabe que é o Bêbado. Em vez disso, você acredita ser um Cidadão, mas sua habilidade é apenas uma ilusão."
   },
   {
     "id": "recluse",
@@ -356,7 +356,7 @@
     "setup": false,
     "name": "Camareira",
     "team": "townsfolk",
-    "ability": "Toda Noite, escolha 2 jogadores vivos(exceto você): Você descobre quantos deles acordaram esta Noite por conta de suas habilidades."
+    "ability": "Toda Noite, escolha 2 jogadores vivos (exceto você): Você descobre quantos deles acordaram esta Noite por conta de suas habilidades."
   },
   {
     "id": "exorcist",
@@ -371,7 +371,7 @@
     "setup": false,
     "name": "Exorcista",
     "team": "townsfolk",
-    "ability": "Toda Noite*, escolha um jogador(exceto o mesmo da Noite anterior), se for o Demônio, ele não age esta Noite e descobre quem você é."
+    "ability": "Toda Noite*, escolha um jogador (exceto o mesmo da Noite anterior), se for o Demônio, ele não age esta Noite e descobre quem você é."
   },
   {
     "id": "innkeeper",
@@ -539,7 +539,7 @@
     "setup": false,
     "name": "Filha da Noite",
     "team": "outsider",
-    "ability": "Quando você for avisado que morreu, escolha um jogador(em segredo ou publicamente): se ele for do bem, morrerá esta Noite."
+    "ability": "Quando você for avisado que morreu, escolha um jogador (em segredo ou publicamente): se ele for do bem, morrerá esta Noite."
   },
   {
     "id": "goon",
@@ -572,7 +572,7 @@
     "setup": false,
     "name": "Lunatico",
     "team": "outsider",
-    "ability": "Você acredita ser o Demônio mas sua habilidade não funciona. O Demônio sabe quem você é e quem você ataca."
+    "ability": "Você acredita ser o Demônio, mas sua habilidade não funciona. O Demônio sabe quem você é e quem você ataca."
   },
   {
     "id": "godfather",
@@ -582,7 +582,7 @@
     "otherNight": 29,
     "otherNightReminder": "If an Outsider died today: • The Godfather points to a player. That player dies.",
     "reminders": [
-      "Morreu Hoje",
+      “Morreu hoje",
       "Morto"
     ],
     "setup": true,
@@ -603,7 +603,7 @@
     "setup": false,
     "name": "Advogado do Diabo",
     "team": "minion",
-    "ability": "Toda Noite, escolha um jogador(exceto o da Noite anterior): durante o Dia, ele não morrerá se for executado."
+    "ability": "Toda Noite, escolha um jogador (exceto o da Noite anterior): durante o Dia, ele não morrerá se for executado."
   },
   {
     "id": "assassin",
@@ -666,7 +666,7 @@
     "setup": false,
     "name": "Zombuul",
     "team": "demon",
-    "ability": "Toda Noite*, se ninguém morreu durante o Dia, escolha um jogador: ele morre. Na primeira vez que você morre, permance vivo em segredo."
+    "ability": "Toda Noite*, se ninguém morreu durante o Dia, escolha um jogador: ele morre. Na primeira vez que você morre, permanece vivo em segredo."
   },
   {
     "id": "pukka",
@@ -712,7 +712,7 @@
     "setup": false,
     "name": "Relojoeiro",
     "team": "townsfolk",
-    "ability": "Na priemira Noite, você descobre a distância entre o Demônio e seu Lacaio mais próximo."
+    "ability": "Na primeira Noite, você descobre a distância entre o Demônio e seu Lacaio mais próximo."
   },
   {
     "id": "dreamer",
@@ -782,7 +782,7 @@
     "otherNightReminder": "Show the head signal (nod “yes”, shake “no”) for whether any Minion nominated today. Place the “Minions did not nominate” marker (remove “Minion nominated”, if any).",
     "reminders": [
       "Lacaio não nomeou",
-      "Lacaio Nomeou"
+      “Lacaio nomeou"
     ],
     "setup": false,
     "name": "Mensageiro",
@@ -819,7 +819,7 @@
     "id": "seamstress",
     "edition": "snv",
     "firstNight": 29,
-    "firstNightReminder": "The Seamstress either shows a “no” head signal, or points to two other players. If the Seamstress chose two players , nod “yes” or shake “no” for whether they are of same alignment.",
+    "firstNightReminder": "The Seamstress either shows a “no” head signal, or points to two other players. If the Seamstress chose two players, nod “yes” or shake “no” for whether they are of same alignment.",
     "otherNight": 45,
     "otherNightReminder": "If the Seamstress has not yet used their ability: • The Seamstress either shows a “no” head signal, or points to two other players. • If the Seamstress chose players , nod “yes” or shake “no” for whether they are of same alignment.",
     "reminders": [
@@ -828,7 +828,7 @@
     "setup": false,
     "name": "Costureira",
     "team": "townsfolk",
-    "ability": "Uma vez por jogo, durante a Noite, você pode escolher 2 jogadores(exceto você): você descobre se eles são do mesmo time."
+    "ability": "Uma vez por jogo, durante a Noite, você pode escolher 2 jogadores (exceto você): você descobre se eles são do mesmo time."
   },
   {
     "id": "philosopher",
@@ -844,7 +844,7 @@
     "setup": false,
     "name": "Filósofo",
     "team": "townsfolk",
-    "ability": "Uma vez por jogo, durante a Noite, você pode escolher um personagem do bem: você se torna ele. Se alguem já é for esse personagem, fica bêbado até você morrer."
+    "ability": "Uma vez por jogo, durante a Noite, você pode escolher um personagem do bem: você se torna ele. Se alguém já é for esse personagem, fica bêbado até você morrer."
   },
   {
     "id": "artist",
@@ -859,7 +859,7 @@
     "setup": false,
     "name": "Artista",
     "team": "townsfolk",
-    "ability": "Uma vez por jogo, durante o DIa, você pode fazer uma pergunta de sim ou não para o Storyteller. (Em segredo)"
+    "ability": "Uma vez por jogo, durante o Dia, você pode fazer uma pergunta de sim ou não para o Storyteller. (Em segredo)"
   },
   {
     "id": "juggler",
@@ -874,7 +874,7 @@
     "setup": false,
     "name": "Malabarista",
     "team": "townsfolk",
-    "ability": "No primeiro dia, você pode tentar advinhar publicamente os personagens de até 5 jogadores. Durante a Noite, você descobre quantos você acertou."
+    "ability": "No primeiro dia, você pode tentar adivinhar publicamente os personagens de até 5 jogadores. Durante a Noite, você descobre quantos você acertou."
   },
   {
     "id": "sage",
@@ -930,7 +930,7 @@
     "setup": false,
     "name": "Barbeiro",
     "team": "outsider",
-    "ability": "Se você morrer, esta Noite o Demônio pode escolher dois jogadres: eles trocam de personagens entre si."
+    "ability": "Se você morrer, esta Noite o Demônio pode escolher dois jogadores: eles trocam de personagens entre si."
   },
   {
     "id": "klutz",
@@ -943,7 +943,7 @@
     "setup": false,
     "name": "Desastrado",
     "team": "outsider",
-    "ability": "Quanto sua morte for decladara, escolha publicamente um jogador do Bem, ou seu time perde."
+    "ability": "Quanto sua morte for declarada, escolha publicamente um jogador do Bem, ou seu time perde."
   },
   {
     "id": "eviltwin",
@@ -958,7 +958,7 @@
     "setup": false,
     "name": "Gêmea Má",
     "team": "minion",
-    "ability": "Você e um opoenente sabem o personagem um do outro. Se o jogador do bem for executado, o Mal vence. O bem não pode vencer enquanto ambos viverem."
+    "ability": "Você e um oponente sabem o personagem um do outro. Se o jogador do bem for executado, o Mal vence. O bem não pode vencer enquanto ambos viverem."
   },
   {
     "id": "witch",
@@ -1001,7 +1001,7 @@
     "setup": false,
     "name": "Velha do Fosso",
     "team": "minion",
-    "ability": "Toda Noite*, escolha um jogador para se tornar um novo personagem (não funciona se já estiver em jogo). Se o personagem escolhido for um DemÔnio, as mortes serão arbitrárias esta Noite."
+    "ability": "Toda Noite*, escolha um jogador para se tornar um novo personagem (não funciona se já estiver em jogo). Se o personagem escolhido for um Demônio, as mortes serão arbitrárias esta Noite."
   },
   {
     "id": "fanggu",
@@ -1064,7 +1064,7 @@
     "setup": false,
     "name": "Vortox",
     "team": "demon",
-    "ability": "Toda Noite*, você esoclhe um jogador: ele morre imediatamente. Habilidades do Bem geram informações falsas. Todo Dia, se ninguém for executado, o Mal vence."
+    "ability": "Toda Noite*, você escolhe um jogador: ele morre imediatamente. Habilidades do Bem geram informações falsas. Todo Dia, se ninguém for executado, o Mal vence."
   },
   {
     "id": "scapegoat",
@@ -1148,7 +1148,7 @@
     "setup": false,
     "name": "Aprendiz",
     "team": "traveler",
-    "ability": "Em sua 1ª noite, você ganha uma habilidade de Cidadão (se for bom), ou uma habilidade de Lacaio (se for mau)."
+    "ability": "Em sua 1ª noite, você ganha uma habilidade de Cidadão (se for bom), ou uma habilidade de Lacaio (se for mal)."
   },
   {
     "id": "matron",
@@ -1306,7 +1306,7 @@
     "setup": false,
     "name": "Esquecido",
     "team": "townsfolk",
-    "ability": "Você não sabe qual é a sua habilidade. Todo dia, visite o Storyteller para tentar adivinhar a sua habilidade: você descobre o quaõ perto está da resposta."
+    "ability": "Você não sabe qual é a sua habilidade. Todo dia, visite o Storyteller para tentar adivinhar a sua habilidade: você descobre o quão perto está da resposta."
   },
   {
     "id": "cannibal",
@@ -1322,7 +1322,7 @@
     "setup": false,
     "name": "Canibal",
     "team": "townsfolk",
-    "ability": "Você tem a habilidade do jogador executaod mais recente. Se ele for do mal, você está envenenado até um jogador do Bem ser executado."
+    "ability": "Você tem a habilidade do jogador executado mais recente. Se ele for do mal, você está envenenado até um jogador do Bem ser executado."
   },
   {
     "id": "fisherman",
@@ -1490,6 +1490,7 @@
     "setup": false,
     "name": "General",
     "team": "townsfolk",
-    "ability": "Cada noite, você descobre qual tendência o Storyteller acredita que está ganhando: Bem, Mal ou Nenhum."
+    "ability": "Cada noite, você descobre qual tendência o Storyteller acredita que está ganhando: Bem, mal ou nenhum."
   }
 ]
+
