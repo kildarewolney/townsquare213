@@ -598,7 +598,7 @@
     "otherNight": 11,
     "otherNightReminder": "The Devil’s Advocate points to a living player, different from the previous night. That player survives execution tomorrow.",
     "reminders": [
-      "Sobreviveu a execução"
+      "Sobrevive a execução"
     ],
     "setup": false,
     "name": "Advogado do Diabo",
