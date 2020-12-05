@@ -105,10 +105,10 @@ export default {
         ],
         [
           "Vigormortis High School (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/1f65bd4a999524719d5dabe98c3c2d27/raw/22bbec6bf56a51a7459e5ae41ed47e41971c5445/VigormortisHighSchool.json"
+          "https://gist.githubusercontent.com/kildarewolney/3397ae5dd4f9747cf4c88823522e0b18"
         ],
         [
-          "teste",
+          "Red The Room",
           "https://gist.github.com/kildarewolney/fe936fbbdba1152db7293314ac4aecb2.js"
         ]
       ]
