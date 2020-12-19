@@ -943,7 +943,7 @@
     "setup": false,
     "name": "Desastrado",
     "team": "outsider",
-    "ability": "Quanto sua morte for declarada, escolha publicamente um jogador do Bem, ou seu time perde."
+    "ability": "Quanto sua morte for declarada, escolha publicamente um jogador do Bem, ou seu time perde. (Você DEVE escolher um jogador vivo)"
   },
   {
     "id": "eviltwin",
@@ -1118,7 +1118,7 @@
     "setup": false,
     "name": "Burocrata",
     "team": "traveler",
-    "ability": "Cada noite, escolha um jogador (você não pode escolher): O voto do escolhido conta como 3 votos amanhã."
+    "ability": "Cada noite, escolha um jogador (você não pode se escolher): O voto do escolhido conta como 3 votos amanhã."
   },
   {
     "id": "thief",
