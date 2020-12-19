@@ -163,7 +163,7 @@ Only the owner of this repository can see this message.
             </li>
             <li @click="swapPlayer()">
               <font-awesome-icon icon="exchange-alt" />
-              Trocar Habilidades
+              Trocar Assento
             </li>
             <li class="screenshot" @click="takeScreenshot">
               <font-awesome-icon icon="camera" />
